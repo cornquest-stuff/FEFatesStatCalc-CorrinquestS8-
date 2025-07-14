@@ -185,10 +185,10 @@ db.classes = {
 	villager : {
 		name	: "Villager",
 		tier	: "tier1",
-		promoteTo : [ "weaponMaster", "merchant" ],
+		promoteTo : [ "weaponMaster", "merchant", "basara", "falcoKnight" ],
 		parallel: "apoth",
 		base	: new Stat(17, 5, 0, 4, 5, 3, 4, 0),
-		growth	: new Stat(15, 15, 0, 15, 15, 30, 15, 0),
+		growth	: new Stat(15, 15, 10, 15, 15, 30, 15, 0),
 		maxStat	: new Stat(35, 19, 15, 19, 19, 22, 18, 15),
 	},
 	
@@ -241,7 +241,7 @@ db.classes = {
 		promoteTo : [ "sentinel", "basara" ],
 		parallel: "knight",
 		base	: new Stat(17, 6, 0, 6, 6, 2, 5, 2),
-		growth	: new Stat(15, 15, 0, 15, 15, 5, 10, 5),
+		growth	: new Stat(15, 15, 5, 15, 15, 5, 10, 5),
 		maxStat	: new Stat(40, 22, 15, 23, 22, 21, 22, 21),
 	},
 	
@@ -250,7 +250,7 @@ db.classes = {
 		tier	: "tier2",
 		base	: new Stat(19, 9, 0, 9, 8, 3, 8, 3),
 		growth	: new Stat(15, 20, 0, 15, 15, 5, 10, 5),
-		maxStat	: new Stat(60, 34, 25, 33, 32, 29, 30, 29),
+		maxStat	: new Stat(60, 34, 25, 33, 32, 29, 31, 29),
 	},
 	
 	basara : {
@@ -631,9 +631,9 @@ db.classes = {
 	lodestar : {
 		name	: "Lodestar",
 		tier	: "tier2",
-		base	: new Stat(19, 7, 0, 12, 9, 7, 7, 2),
-		growth	: new Stat(15, 10, 0, 25, 15, 25, 5, 5),
-		maxStat	: new Stat(60, 29, 26, 40, 33, 40, 30, 29),
+		base	: new Stat(19, 7, 0, 12, 10, 7, 7, 2),
+		growth	: new Stat(15, 10, 0, 25, 20, 25, 5, 5),
+		maxStat	: new Stat(60, 29, 26, 40, 34, 40, 30, 29),
 	},
 	
 	greatLord : {
@@ -679,7 +679,7 @@ db.classes = {
 	soldier : {
 		name	: "Lancer",
 		tier	: "tier1",
-		promoteTo : [ "ballistician", "greatLord" ],
+		promoteTo : [ "ballistician", "greatLord", "paladin", "general" ],
 		base	: new Stat(18, 5, 0, 5, 5, 2, 7, 2),
 		growth	: new Stat(15, 10, 0, 10, 10, 5, 20, 10),
 		maxStat	: new Stat(60, 31, 25, 29, 29, 30, 31, 29),
