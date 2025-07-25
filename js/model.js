@@ -713,7 +713,7 @@ db.character = {
 				Spd	: new Stat(0, 0, 0, 5, 15, 5, 0, 0),
 				Lck	: new Stat(0, 5, 5, 0, 0, 40, 0, 0),
 				Def	: new Stat(0, 0, 0, 0, 0, 5, 15, 5),
-				Res	: new Stat(0, 0, 5, 0, 5, 0, 0, 20),
+				Res	: new Stat(0, 0, 5, 0, 5, 0, 0, 25),
 			},
 			bane : {
 				HP	: new Stat(-10, 0, 0, 0, 0, 0, -5, -5),
