@@ -495,9 +495,9 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "bowKnight", "adventurer" ],
 		parallel: "archer",
-		base	: new Stat(16, 3, 1, 4, 8, 1, 2, 4),
-		growth	: new Stat(0, 10, 5, 10, 20, 0, 0, 20),
-		maxStat	: new Stat(35, 19, 18, 20, 24, 18, 17, 22),
+		base	: new Stat(16, 3, 2, 5, 9, 1, 2, 5),
+		growth	: new Stat(0, 10, 10, 10, 20, 0, 0, 20),
+		maxStat	: new Stat(35, 19, 19, 21, 25, 18, 17, 23),
 	},
 	
 	adventurer : {
