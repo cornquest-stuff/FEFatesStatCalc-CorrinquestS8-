@@ -161,7 +161,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "swordSaint", "weaponMaster", "greatLord" ],
 		parallel: "mercenary",
-		base	: new Stat(17, 5, 0, 6, 8, 3, 3, 3),
+		base	: new Stat(17, 5, 0, 6, 9, 3, 3, 3),
 		growth	: new Stat(10, 10, 0, 15, 20, 15, 0, 10),
 		maxStat	: new Stat(40, 20, 16, 23, 25, 24, 18, 20),
 	},
@@ -205,7 +205,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "merchant", "mechanist" ],
 		base	: new Stat(18, 6, 0, 4, 4, 2, 6, 2),
-		growth	: new Stat(20, 20, 0, 10, 10, 5, 10, 5),
+		growth	: new Stat(20, 20, 0, 10, 10, 5, 15, 5),
 		maxStat	: new Stat(45, 24, 15, 19, 19, 21, 23, 20),
 	},
 	
@@ -704,11 +704,11 @@ db.character = {
 		},
 		
 		growthMod : {
-			none : new Stat(45, 45, 30, 40, 45, 45, 35, 25),
+			none : new Stat(45, 45, 35, 40, 45, 45, 35, 25),
 			boon : {
 				HP	: new Stat(15, 0, 0, 0, 0, 0, 5, 5),
 				Str	: new Stat(0, 15, 0, 5, 0, 0, 5, 0),
-				Mag	: new Stat(0, 0, 20, 0, 5, 0, 0, 5),
+				Mag	: new Stat(0, 0, 15, 0, 5, 0, 0, 5),
 				Skl	: new Stat(0, 5, 0, 40, 0, 0, 5, 0),
 				Spd	: new Stat(0, 0, 0, 5, 15, 5, 0, 0),
 				Lck	: new Stat(0, 5, 5, 0, 0, 40, 0, 0),
@@ -813,7 +813,7 @@ db.character = {
 			Standard : new BaseStat(3, 24, 10, 0, 15, 8, 9, 10, 4),
 			Conquest : new BaseStat(10, 34, 17, 0, 24, 10, 13, 20, 6),
 		},
-		growth	: new Stat(15, 5, 0, 5, 0, 15, 5, 5),
+		growth	: new Stat(15, 5, 0, 105, 0, 15, 5, 5),
 		cap		: new Stat(0, 2, 0, 1, -2, 0, 2, -2),
 		route	: "All",
 	}),
@@ -825,7 +825,7 @@ db.character = {
 		baseClass : "maid",
 		classSet  : [ "troubadour", "mercenary" ],
 		base	: {
-			"First Joining" : new BaseStat(1, 19, 5, 9, 10, 10, 12, 5, 9),
+			"First Joining" : new BaseStat(1, 19, 6, 10, 11, 12, 12, 5, 10),
 			"Second Joining" : new BaseStat(13, 24, 7, 14, 15, 17, 20, 7, 14),
 		},
 		growth	: new Stat(40, 10, 35, 30, 40, 55, 15, 35),
@@ -841,7 +841,7 @@ db.character = {
 		baseClass : "maid",
 		classSet  : [ "troubadour", "cavalier" ],
 		base	: {
-			"First Joining" : new BaseStat(1, 21, 8, 6, 12, 9, 10, 7, 6),
+			"First Joining" : new BaseStat(1, 21, 9, 7, 13, 11, 10, 7, 7),
 			"Second Joining" : new BaseStat(13, 27, 13, 9, 19, 15, 17, 11, 10),
 		},
 		growth	: new Stat(50, 35, 15, 40, 35, 45, 25, 25),
@@ -871,7 +871,7 @@ db.character = {
 		baseClass : "villager",
 		classSet  : [ "villager", "archer" ],
 		base	: {
-			Standard : new BaseStat(1, 16, 6, 0, 5, 7, 3, 4, 1),
+			Standard : new BaseStat(1, 16, 6, 0, 5, 7, 7, 4, 1),
 		},
 		growth	: new Stat(30, 40, 5, 50, 55, 45, 35, 30),
 		cap		: new Stat(0, 0, 0, 1, 1, 1, 0, -2),
@@ -887,8 +887,8 @@ db.character = {
 		base	: {
 			Standard : new BaseStat(4, 20, 8, 2, 6, 8, 5, 10, 3),
 		},
-		growth	: new Stat(20, 25, 15, 50, 45, 35, 45, 20),
-		cap		: new Stat(0, -1, 0, -2, 1, 0, 2, 0),
+		growth	: new Stat(30, 35, 25, 50, 45, 35, 45, 20),
+		cap		: new Stat(0, -1, 0, 2, 1, 0, 2, 0),
 		route	: "Birthright",
 	}),
 
@@ -896,8 +896,8 @@ db.character = {
 		name	: "Sakura",
 		gender	: "F",
 		gen		: "mother",
-		baseClass : "miko",
-		classSet  : [ "miko", "pegKnight" ],
+		baseClass : "monk",
+		classSet  : [ "monk", "pegKnight" ],
 		base	: {
 			Standard : new BaseStat(1, 16, 3, 6, 5, 7, 9, 5, 7),
 			Revelation : new BaseStat(4, 19, 4, 8, 6, 10, 11, 7, 8),
@@ -912,9 +912,9 @@ db.character = {
 		gender	: "F",
 		gen		: "mother",
 		baseClass : "samurai",
-		classSet  : [ "samurai", "miko" ],
+		classSet  : [ "samurai", "monk" ],
 		base	: {
-			Standard : new BaseStat(4, 20, 9, 0, 11, 11, 5, 6, 9),
+			Standard : new BaseStat(4, 20, 10, 0, 12, 12, 5, 6, 9),
 			Revelation : new BaseStat(4, 20, 7, 0, 9, 11, 5, 6, 9),
 		},
 		growth	: new Stat(25, 55, 10, 45, 55, 25, 20, 30),
@@ -929,9 +929,9 @@ db.character = {
 		baseClass : "pegKnight",
 		classSet  : [ "pegKnight", "samurai" ],
 		base	: {
-			Standard : new BaseStat(5, 22, 8, 0, 13, 10, 7, 9, 10),
+			Standard : new BaseStat(5, 22, 8, 1, 13, 10, 7, 9, 10),
 		},
-		growth	: new Stat(55, 30, 20, 50, 20, 25, 45, 5),
+		growth	: new Stat(55, 35, 20, 55, 30, 25, 55, 20),
 		cap		: new Stat(0, -1, 0, 2, -2, -1, 3, -1),
 		route	: "Birthright",
 	}),
@@ -958,10 +958,10 @@ db.character = {
 		baseClass : "diviner",
 		classSet  : [ "diviner", "apoth" ],
 		base	: {
-			Standard : new BaseStat(5, 20, 0, 9, 11, 7, 6, 5, 10),
+			Standard : new BaseStat(5, 20, 0, 9, 12, 7, 7, 6, 11),
 			Revelation : new BaseStat(7, 20, 1, 10, 12, 7, 6, 5, 10),
 		},
-		growth	: new Stat(35, 5, 65, 50, 15, 35, 25, 45),
+		growth	: new Stat(35, 5, 65, 50, 25, 35, 25, 45),
 		cap		: new Stat(0, 0, 3, 2, -2, -1, -2, 1),
 		route	: "Birthright",
 	}),
@@ -973,7 +973,7 @@ db.character = {
 		baseClass : "pegKnight",
 		classSet  : [ "pegKnight", "lancer" ],
 		base	: {
-			Standard : new BaseStat(8, 23, 9, 4, 13, 16, 12, 9, 15),
+			Standard : new BaseStat(8, 23, 9, 5, 13, 16, 12, 9, 15),
 			Revelation : new BaseStat(17, 24, 14, 5, 18, 23, 16, 12, 23),
 		},
 		growth	: new Stat(45, 45, 15, 40, 45, 40, 35, 40),
@@ -1003,10 +1003,10 @@ db.character = {
 		baseClass : "archer",
 		classSet  : [ "archer", "ninja" ],
 		base	: {
-			Standard : new BaseStat(3, 19, 8, 0, 9, 10, 6, 5, 3),
+			Standard : new BaseStat(3, 19, 8, 0, 10, 10, 6, 5, 3),
 			Revelation : new BaseStat(11, 25, 12, 0, 15, 17, 11, 8, 10),
 		},
-		growth	: new Stat(30, 20, 0, 30, 60, 30, 15, 40),
+		growth	: new Stat(30, 35, 0, 45, 60, 30, 15, 40),
 		cap		: new Stat(0, 0, 0, 1, 3, -1, -1, -1),
 		route	: "Birthright",
 	}),
@@ -1018,7 +1018,7 @@ db.character = {
 		baseClass : "diviner",
 		classSet  : [ "diviner", "oni" ],
 		base	: {
-			Standard : new BaseStat(1, 16, 1, 4, 5, 7, 8, 4, 5),
+			Standard : new BaseStat(1, 16, 1, 4, 6, 7, 9, 5, 6),
 			Revelation : new BaseStat(9, 22, 2, 9, 9, 13, 11, 5, 7),
 		},
 		growth	: new Stat(50, 30, 40, 30, 45, 60, 40, 20),
@@ -1047,9 +1047,9 @@ db.character = {
 		baseClass : "samurai",
 		classSet  : [ "samurai", "oni" ],
 		base	: {
-			Standard : new BaseStat(10, 26, 11, 0, 9, 14, 10, 12, 4),
+			Standard : new BaseStat(10, 26, 12, 0, 10, 15, 10, 12, 4),
 		},
-		growth	: new Stat(55, 35, 0, 25, 15, 45, 45, 15),
+		growth	: new Stat(55, 40, 0, 35, 30, 45, 45, 15),
 		cap		: new Stat(0, 1, 0, -1, -2, 0, 2, 0),
 		route	: "Birthright",
 	}),
@@ -1061,7 +1061,7 @@ db.character = {
 		baseClass : "archer",
 		classSet  : [ "archer", "lancer" ],
 		base	: {
-			Standard : new BaseStat(11, 26, 13, 0, 17, 11, 13, 10, 4),
+			Standard : new BaseStat(11, 26, 13, 0, 18, 11, 13, 10, 4),
 		},
 		growth	: new Stat(50, 35, 0, 60, 40, 45, 35, 20),
 		cap		: new Stat(0, 1, 0, 3, -2, 1, 0, -2),
@@ -1089,7 +1089,7 @@ db.character = {
 		baseClass : "kitsune",
 		classSet  : [ "kitsune", "diviner" ],
 		base	: {
-			Standard : new BaseStat(14, 30, 15, 1, 12, 19, 14, 9, 14),
+			Standard : new BaseStat(14, 30, 15, 3, 13, 19, 14, 11, 17),
 		},
 		growth	: new Stat(45, 40, 10, 25, 45, 50, 35, 40),
 		cap		: new Stat(0, 1, 0, -3, 2, 1, -2, 2),
@@ -1103,7 +1103,7 @@ db.character = {
 		baseClass : "swordSaint",
 		classSet  : [ "samurai", "pegKnight" ],
 		base	: {
-			Standard : new BaseStat(4, 36, 20, 2, 18, 24, 20, 16, 13),
+			Standard : new BaseStat(4, 36, 21, 2, 20, 24, 20, 16, 13),
 		},
 		growth	: new Stat(50, 45, 0, 50, 45, 40, 35, 25),
 		cap		: new Stat(0, 1, 0, 2, 1, 1, -2, -2),
@@ -1132,7 +1132,7 @@ db.character = {
 		baseClass : "knight",
 		classSet  : [ "knight", "troubadour" ],
 		base	: {
-			Standard : new BaseStat(6, 23, 13, 0, 8, 5, 10, 12, 4),
+			Standard : new BaseStat(6, 23, 14, 0, 8, 7, 10, 12, 4),
 			Revelation : new BaseStat(8, 24, 14, 0, 9, 5, 11, 13, 4),
 		},
 		growth	: new Stat(35, 60, 0, 35, 50, 50, 35, 30),
@@ -1147,7 +1147,7 @@ db.character = {
 		baseClass : "fighter",
 		classSet  : [ "fighter", "cavalier" ],
 		base	: {
-			Standard : new BaseStat(7, 24, 12, 0, 9, 8, 1, 9, 4),
+			Standard : new BaseStat(7, 25, 12, 0, 15, 9, 1, 9, 4),
 			Revelation : new BaseStat(9, 26, 13, 0, 10, 9, 1, 9, 4),
 		},
 		growth	: new Stat(50, 45, 0, 55, 35, 5, 45, 20),
@@ -1162,7 +1162,7 @@ db.character = {
 		baseClass : "mage",
 		classSet  : [ "mage", "samurai" ],
 		base	: {
-			Standard : new BaseStat(5, 21, 5, 8, 10, 7, 9, 6, 7),
+			Standard : new BaseStat(5, 21, 5, 9, 10, 7, 9, 7, 7),
 			Revelation : new BaseStat(12, 24, 8, 12, 12, 10, 12, 7, 10),
 		},
 		growth	: new Stat(55, 35, 30, 55, 35, 60, 40, 20),
@@ -1177,7 +1177,7 @@ db.character = {
 		baseClass : "outlaw",
 		classSet  : [ "outlaw", "mage" ],
 		base	: {
-			Standard : new BaseStat(8, 22, 9, 5, 9, 15, 6, 7, 12),
+			Standard : new BaseStat(8, 22, 9, 6, 10, 16, 6, 7, 13),
 			Revelation : new BaseStat(14, 24, 11, 6, 11, 17, 7, 10, 16),
 		},
 		growth	: new Stat(40, 35, 20, 40, 50, 30, 30, 40),
@@ -1192,7 +1192,7 @@ db.character = {
 		baseClass : "mage",
 		classSet  : [ "mage", "outlaw" ],
 		base	: {
-			Standard : new BaseStat(9, 20, 1, 12, 5, 11, 3, 4, 8),
+			Standard : new BaseStat(9, 20, 1, 14, 6, 11, 3, 5, 9),
 		},
 		growth	: new Stat(30, 5, 50, 35, 50, 20, 15, 30),
 		cap		: new Stat(0, 0, 3, -2, 2, -1, -2, 1),
@@ -1220,7 +1220,7 @@ db.character = {
 		baseClass : "mercenary",
 		classSet  : [ "mercenary", "pegKnight" ],
 		base	: {
-			Standard : new BaseStat(10, 24, 12, 3, 12, 15, 9, 11, 8),
+			Standard : new BaseStat(10, 24, 12, 3, 12, 15, 9, 12, 8),
 		},
 		growth	: new Stat(40, 30, 5, 25, 45, 30, 45, 30),
 		cap		: new Stat(0, -1, 0, -1, 2, 0, 1, 0),
@@ -1248,7 +1248,7 @@ db.character = {
 		baseClass : "mercenary",
 		classSet  : [ "mercenary", "ninja" ],
 		base	: {
-			Standard : new BaseStat(12, 28, 15, 0, 16, 13, 14, 10, 7),
+			Standard : new BaseStat(12, 28, 15, 0, 17, 13, 14, 10, 7),
 			Revelation : new BaseStat(16, 30, 17, 0, 19, 16, 16, 12, 8),
 		},
 		growth	: new Stat(50, 45, 0, 45, 30, 55, 35, 25),
@@ -1263,7 +1263,7 @@ db.character = {
 		baseClass : "cavalier",
 		classSet  : [ "cavalier", "mage" ],
 		base	: {
-			Standard : new BaseStat(10, 25, 13, 0, 9, 13, 9, 10, 10),
+			Standard : new BaseStat(10, 25, 14, 0, 9, 13, 9, 10, 12),
 			Revelation : new BaseStat(16, 27, 16, 0, 10, 15, 12, 12, 11),
 		},
 		growth	: new Stat(30, 50, 5, 30, 50, 35, 25, 45),
@@ -1278,7 +1278,7 @@ db.character = {
 		baseClass : "fighter",
 		classSet  : [ "fighter", "troubadour" ],
 		base	: {
-			Standard : new BaseStat(10, 28, 15, 0, 10, 13, 9, 8, 2),
+			Standard : new BaseStat(10, 29, 16, 0, 10, 14, 11, 8, 2),
 		},
 		growth	: new Stat(65, 55, 0, 35, 50, 45, 20, 5),
 		cap		: new Stat(0, 3, 0, 0, 2, 0, -2, -2),
@@ -1292,7 +1292,7 @@ db.character = {
 		baseClass : "knight",
 		classSet  : [ "knight", "fighter" ],
 		base	: {
-			Standard : new BaseStat(15, 31, 15, 0, 15, 6, 12, 19, 10),
+			Standard : new BaseStat(15, 31, 18, 0, 16, 6, 12, 20, 12),
 		},
 		growth	: new Stat(50, 40, 0, 50, 10, 35, 55, 45),
 		cap		: new Stat(0, 0, 0, 0, -3, 0, 3, 1),
@@ -1320,7 +1320,7 @@ db.character = {
 		baseClass : "wolfskin",
 		classSet  : [ "wolfskin", "fighter" ],
 		base	: {
-			Standard : new BaseStat(15, 35, 19, 0, 10, 13, 9, 16, 7),
+			Standard : new BaseStat(15, 35, 21, 0, 10, 13, 9, 16, 7),
 		},
 		growth	: new Stat(60, 60, 0, 20, 35, 30, 50, 25),
 		cap		: new Stat(0, 3, 0, -2, -1, 0, 2, -1),
@@ -1334,7 +1334,7 @@ db.character = {
 		baseClass : "paladin",
 		classSet  : [ "cavalier", "wyvernRider" ],
 		base	: {
-			Standard : new BaseStat(4, 38, 23, 4, 18, 15, 20, 23, 11),
+			Standard : new BaseStat(4, 38, 23, 4, 19, 15, 20, 23, 12),
 		},
 		growth	: new Stat(45, 50, 5, 40, 35, 60, 40, 15),
 		cap		: new Stat(0, 2, -1, -1, -1, 2, 1, -2),
@@ -1378,10 +1378,10 @@ db.character = {
 		baseClass : "maid",
 		classSet  : [ "troubadour", "mage", "mercenary" ],
 		base	: {
-			Standard : new BaseStat(5, 29, 18, 16, 25, 15, 11, 14, 23),
+			Standard : new BaseStat(5, 29, 19, 17, 26, 19, 11, 14, 24),
 		},
-		growth	: new Stat(35, 40, 20, 45, 30, 35, 30, 30),
-		cap		: new Stat(0, 1, -1, 2, 0, -1, 1, -1),
+		growth	: new Stat(35, 40, 20, 45, 30, 35, 30, 55),
+		cap		: new Stat(0, 1, -1, 2, 0, -1, 1, 3),
 		route	: "Conquest",
 	}),
 
@@ -1393,7 +1393,7 @@ db.character = {
 		classSet  : [ "outlaw", "ninja", "fighter" ],
 		base	: {
 			Standard : new BaseStat(10, 34, 20, 11, 23, 27, 15, 14, 24),
-			Conquest : new BaseStat(2, 31, 18, 10, 21, 24, 13, 13, 21),
+			Conquest : new BaseStat(2, 31, 19, 15, 22, 25, 13, 13, 22),
 		},
 		growth	: new Stat(30, 25, 10, 20, 35, 30, 15, 35),
 		cap		: new Stat(0, -1, 0, -1, 3, -1, -2, 2),
@@ -1407,7 +1407,7 @@ db.character = {
 		baseClass : "exorcist",
 		classSet  : [ "monk", "samurai", "apoth" ],
 		base	: {
-			Standard : new BaseStat(5, 31, 8, 23, 25, 18, 17, 14, 24),
+			Standard : new BaseStat(5, 31, 8, 24, 28, 19, 19, 14, 25),
 		},
 		growth	: new Stat(45, 15, 35, 55, 30, 45, 35, 35),
 		cap		: new Stat(0, 0, 1, 1, -2, 0, 0, 1),
@@ -1587,7 +1587,7 @@ db.character = {
 		name	: "Mitama",
 		gender	: "F",
 		gen		: "child",
-		baseClass : "miko",
+		baseClass : "monk",
 		route	: "Children",
 		
 		fixedParent	: "azama",
