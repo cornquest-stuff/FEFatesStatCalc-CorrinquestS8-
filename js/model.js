@@ -826,7 +826,7 @@ db.character = {
 		classSet  : [ "troubadour", "mercenary" ],
 		base	: {
 			"First Joining" : new BaseStat(1, 19, 6, 10, 11, 12, 12, 5, 10),
-			"Second Joining" : new BaseStat(13, 24, 7, 14, 15, 17, 20, 7, 14),
+			"Second Joining" : new BaseStat(13, 24, 8, 15, 17, 19, 20, 7, 15),
 		},
 		growth	: new Stat(40, 10, 35, 30, 40, 55, 15, 35),
 		cap		: new Stat(0, -2, 2, 0, 1, 0, -1, 1),
@@ -842,7 +842,7 @@ db.character = {
 		classSet  : [ "troubadour", "cavalier" ],
 		base	: {
 			"First Joining" : new BaseStat(1, 21, 9, 7, 13, 11, 10, 7, 7),
-			"Second Joining" : new BaseStat(13, 27, 13, 9, 19, 15, 17, 11, 10),
+			"Second Joining" : new BaseStat(13, 27, 14, 10, 20, 18, 17, 11, 11),
 		},
 		growth	: new Stat(50, 35, 15, 40, 35, 45, 25, 25),
 		cap		: new Stat(0, 2, -2, 2, 0, -1, 0, -1),
