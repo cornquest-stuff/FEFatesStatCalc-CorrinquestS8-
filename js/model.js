@@ -814,7 +814,7 @@ db.character = {
 			Conquest : new BaseStat(10, 34, 17, 0, 24, 10, 13, 20, 6),
 		},
 		growth	: new Stat(15, 5, 0, 105, 0, 15, 5, 5),
-		cap		: new Stat(0, 2, 0, 1, -2, 0, 2, -2),
+		cap		: new Stat(0, 2, 0, 74, -2, 0, 2, -2),
 		route	: "All",
 	}),
 
