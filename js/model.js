@@ -1147,7 +1147,7 @@ db.character = {
 		baseClass : "fighter",
 		classSet  : [ "fighter", "cavalier" ],
 		base	: {
-			Standard : new BaseStat(7, 25, 12, 0, 15, 9, 1, 9, 4),
+			Standard : new BaseStat(7, 25, 12, 0, 14, 9, 1, 9, 4),
 			Revelation : new BaseStat(9, 26, 13, 0, 10, 9, 1, 9, 4),
 		},
 		growth	: new Stat(50, 45, 0, 55, 35, 5, 45, 20),
