@@ -1049,7 +1049,7 @@ db.character = {
 		base	: {
 			Standard : new BaseStat(10, 26, 12, 0, 10, 15, 10, 12, 4),
 		},
-		growth	: new Stat(55, 40, 0, 35, 30, 45, 45, 15),
+		growth	: new Stat(55, 45, 0, 30, 30, 45, 45, 15),
 		cap		: new Stat(0, 1, 0, -1, -2, 0, 2, 0),
 		route	: "Birthright",
 	}),
