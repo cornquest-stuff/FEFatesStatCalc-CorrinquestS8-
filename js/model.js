@@ -857,7 +857,7 @@ db.character = {
 		baseClass : "cavalier",
 		classSet  : [ "cavalier", "mercenary" ],
 		base	: {
-			Standard : new BaseStat(6, 22, 11, 0, 9, 8, 7, 10, 5),
+			Standard : new BaseStat(6, 22, 11, 0, 10, 8, 7, 10, 5),
 		},
 		growth	: new Stat(40, 45, 5, 50, 40, 40, 40, 25),
 		cap		: new Stat(0, 1, 0, 2, 0, -1, 0, -1),
@@ -914,7 +914,7 @@ db.character = {
 		baseClass : "samurai",
 		classSet  : [ "samurai", "monk" ],
 		base	: {
-			Standard : new BaseStat(4, 20, 10, 0, 12, 12, 5, 6, 9),
+			Standard : new BaseStat(4, 20, 10, 0, 12, 14, 5, 6, 9),
 			Revelation : new BaseStat(4, 20, 7, 0, 9, 11, 5, 6, 9),
 		},
 		growth	: new Stat(25, 55, 10, 45, 55, 25, 20, 30),
@@ -1147,7 +1147,7 @@ db.character = {
 		baseClass : "fighter",
 		classSet  : [ "fighter", "cavalier" ],
 		base	: {
-			Standard : new BaseStat(7, 25, 12, 0, 14, 9, 1, 9, 4),
+			Standard : new BaseStat(7, 25, 13, 0, 14, 9, 1, 9, 4),
 			Revelation : new BaseStat(9, 26, 13, 0, 10, 9, 1, 9, 4),
 		},
 		growth	: new Stat(50, 45, 0, 55, 35, 5, 45, 20),
